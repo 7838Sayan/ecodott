@@ -5,27 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart - EcoDott</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">EcoDott</h1>
+            <h1 class="logo">🌿 EcoDott</h1>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="plants.html">Plants</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html" class="cart-btn active">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="cart.html" class="cart-btn active">🛒 Cart (<span id="cart-count">0</span>)</a></li>
             </ul>
+            <div class="mobile-menu-toggle">☰</div>
         </div>
     </nav>
 
     <main class="cart-page">
-        <h1>Your Cart</h1>
-        <div id="cart-items"></div>
-        <div class="cart-total">
-            <h3>Total: $<span id="total-price">0.00</span></h3>
-            <button id="order-btn" class="order-btn">Place Order</button>
+        <div class="page-header">
+            <h1>Your Shopping Cart</h1>
+            <p>Review your selected plants</p>
+        </div>
+
+        <div class="container">
+            <div class="cart-content">
+                <div class="cart-items-section">
+                    <div id="cart-items"></div>
+                    <div id="empty-cart" class="empty-cart" style="display: none;">
+                        <div class="empty-cart-icon">🛒</div>
+                        <h3>Your cart is empty</h3>
+                        <p>Add some beautiful plants to get started!</p>
+                        <a href="plants.html" class="cta-btn">Browse Plants</a>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-line">
+                        <span>Subtotal:</span>
+                        <span><span id="subtotal">0.00</span></span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Shipping:</span>
+                        <span><span id="shipping">0.00</span></span>
+                    </div>
+                    <div class="summary-line total">
+                        <span>Total:</span>
+                        <span>₹<span id="total-price">0.00</span></span>
+                    </div>
+                    <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
+                    <div class="secure-checkout">
+                        <span>🔒 Secure Checkout</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 

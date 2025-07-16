@@ -5,36 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - EcoDott</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">EcoDott</h1>
+            <h1 class="logo">🌿 EcoDott</h1>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="plants.html">Plants</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="cart.html" class="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="cart.html" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a></li>
             </ul>
+            <div class="mobile-menu-toggle">☰</div>
         </div>
     </nav>
 
     <main class="contact-page">
-        <h1>Contact Us</h1>
-        <div class="contact-content">
-            <div class="contact-info">
-                <h2>Get in Touch</h2>
-                <p>Email: hello@ecodott.com</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Hours: Mon-Fri 9AM-6PM EST</p>
+        <div class="page-header">
+            <h1>Contact Us</h1>
+            <p>We're here to help with all your plant questions</p>
+        </div>
+
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about plant care, orders, or just want to chat about plants? We'd love to hear from you!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>bhowmicksayantan594@gmail.com</p>
+                                <small>We typically respond within 24 hours</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>7602387172</p>
+                                <small>Mon-Fri 9AM-6PM EST</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">💬</div>
+                            <div>
+                                <h4>Live Chat</h4>
+                                <p>Available on our website</p>
+                                <small>Mon-Fri 9AM-5PM EST</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-section">
+                        <h3>Frequently Asked Questions</h3>
+                        <div class="faq-item">
+                            <h4>How do you ship plants safely?</h4>
+                            <p>We use specialized plant-safe packaging with moisture control and protective materials to ensure your plants arrive healthy.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>What if my plant arrives damaged?</h4>
+                            <p>We offer a 30-day guarantee. Contact us with photos and we'll send a replacement or provide a full refund.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Do you provide care instructions?</h4>
+                            <p>Yes! Each plant comes with detailed care instructions, and our team is always available for ongoing support.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select a Topic</option>
+                            <option value="order">Order Question</option>
+                            <option value="care">Plant Care Help</option>
+                            <option value="shipping">Shipping Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
         </div>
     </main>
 

@@ -9,61 +9,173 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">EcoDott</h1>
+            <div class="nav-logo">
+                <h2>🌱 EcoDott</h2>
+            </div>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="plants.html" class="active">Plants</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html" class="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="plants.html" class="nav-link active">Plants</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link cart-icon">🛒 <span id="cart-count">0</span></a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <main class="plants-page">
-        <h1>Our Plant Collection</h1>
-        <div class="plant-grid">
-            <div class="plant-card">
-                <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=300" alt="Monstera">
-                <h3>Monstera Deliciosa</h3>
-                <p>Perfect for bright, indirect light</p>
-                <p class="price">$45.99</p>
-                <button class="add-to-cart" data-name="Monstera Deliciosa" data-price="45.99">Add to Cart</button>
-            </div>
-            <div class="plant-card">
-                <img src="https://images.unsplash.com/photo-1509423350716-97f2360af2e4?w=300" alt="Snake Plant">
-                <h3>Snake Plant</h3>
-                <p>Low maintenance, perfect for beginners</p>
-                <p class="price">$29.99</p>
-                <button class="add-to-cart" data-name="Snake Plant" data-price="29.99">Add to Cart</button>
-            </div>
-            <div class="plant-card">
-                <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=300" alt="Fiddle Leaf Fig">
-                <h3>Fiddle Leaf Fig</h3>
-                <p>Statement plant for modern homes</p>
-                <p class="price">$65.99</p>
-                <button class="add-to-cart" data-name="Fiddle Leaf Fig" data-price="65.99">Add to Cart</button>
-            </div>
-            <div class="plant-card">
-                <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?w=300" alt="Pothos">
-                <h3>Golden Pothos</h3>
-                <p>Trailing vine, great for hanging baskets</p>
-                <p class="price">$19.99</p>
-                <button class="add-to-cart" data-name="Golden Pothos" data-price="19.99">Add to Cart</button>
-            </div>
-            <div class="plant-card">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300" alt="Peace Lily">
-                <h3>Peace Lily</h3>
-                <p>Beautiful white flowers, air purifying</p>
-                <p class="price">$35.99</p>
-                <button class="add-to-cart" data-name="Peace Lily" data-price="35.99">Add to Cart</button>
-            </div>
-            <div class="plant-card">
-                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300" alt="Rubber Plant">
-                <h3>Rubber Plant</h3>
-                <p>Glossy leaves, easy to care for</p>
-                <p class="price">$39.99</p>
-                <button class="add-to-cart" data-name="Rubber Plant" data-price="39.99">Add to Cart</button>
+    <main class="main-content">
+        <div class="hero-section">
+            <h1>Indian Plants Collection</h1>
+            <p>Discover authentic Indian plants with proper photos and care instructions</p>
+        </div>
+
+        <div class="filter-section">
+            <h3>Filter by Category:</h3>
+            <button class="filter-btn active" data-category="all">All Plants</button>
+            <button class="filter-btn" data-category="beginner">Beginner Friendly</button>
+            <button class="filter-btn" data-category="flowering">Flowering Plants</button>
+            <button class="filter-btn" data-category="statement">Statement Plants</button>
+        </div>
+
+        <div class="container">
+            <div class="plant-grid">
+                <!-- Row 1 -->
+                <div class="plant-card" data-price="25" data-category="beginner">
+                    <img src="/f17c4e_28ce0fa3097b4a9e9f50248da0e8abce.avif" alt="Tulsi">
+                    <div class="plant-info">
+                        <h3>Tulsi (Holy Basil)</h3>
+                        <p>Sacred plant with medicinal properties</p>
+                        <div class="plant-details">
+                            <span class="difficulty">🟢 Easy</span>
+                            <span class="light">☀️ Full Sun</span>
+                        </div>
+                        <p class="price">₹250</p>
+                        <button class="add-to-cart" data-name="Tulsi (Holy Basil)" data-price="25.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="plant-card" data-price="40" data-category="flowering">
+                    <img src="/images.jpeg" alt="Hibiscus">
+                    <div class="plant-info">
+                        <h3>Hibiscus (Japa)</h3>
+                        <p>Large colorful flowers, hair care benefits</p>
+                        <div class="plant-details">
+                            <span class="difficulty">🟢 Easy</span>
+                            <span class="light">☀️ Full Sun</span>
+                        </div>
+                        <p class="price">₹400</p>
+                        <button class="add-to-cart" data-name="Hibiscus (Joba)" data-price="40.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="plant-card" data-price="32" data-category="flowering">
+                    <img src="rose.jpeg" alt="Rose">
+                    <div class="plant-info">
+                        <h3>Rose (Gulab)</h3>
+                        <p>Classic beauty, fragrant flowers</p>
+                        <div class="plant-details">
+                            <span class="difficulty">🟡 Moderate</span>
+                            <span class="light">☀️ Full Sun</span>
+                        </div>
+                        <p class="price">₹300</p>
+                        <button class="add-to-cart" data-name="Rose (Gulab)" data-price="32.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Row 2 -->
+                <div class="plant-card" data-price="22" data-category="beginner">
+                    <img src="/Aloe Vera.jpeg" alt="Aloe Vera">
+                    <div class="plant-info">
+                        <h3>Aloe Vera</h3>
+                        <p>Medicinal succulent, skin healing</p>
+                        <div class="plant-details">
+                            <span class="difficulty">🟢 Very Easy</span>
+                            <span class="light">☀️ Bright Light</span>
+                        </div>
+                        <p class="price">₹830</p>
+                        <button class="add-to-cart" data-name="Aloe Vera" data-price="22.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="plant-card" data-price="45" data-category="statement">
+                    <img src="/neem tree.jpeg" alt="Neem Tree">
+                    <div class="plant-info">
+                        <h3>Neem Tree</h3>
+                        <p>Natural pesticide, medicinal uses</p>
+                        <div class="plant-details">
+                            <span class="difficulty">🟢 Easy</span>
+                            <span class="light">☀️ Full Sun</span>
+                        </div>
+                        <p class="price">₹450</p>
+                        <button class="add-to-cart" data-name="Neem Tree" data-price="45.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="plant-card" data-price="55" data-category="statement">
+                    <img src="/banyan tree.jpeg" alt="Banyan Tree">
+                    <div class="plant-info">
+                        <h3>Banyan Tree</h3>
+                        <p>National tree of India, aerial roots</p>
+                        <div class="plant-details">
+                            <span class="difficulty">🟡 Moderate</span>
+                            <span class="light">☀️ Full Sun</span>
+                        </div>
+                        <p class="price">₹550</p>
+                        <button class="add-to-cart" data-name="Banyan Tree" data-price="55.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Row 3 -->
+                <div class="plant-card" data-price="50" data-category="statement">
+                    <img src="/Mango Tree.jpeg" alt="Mango Tree">
+                    <div class="plant-info">
+                        <h3>Mango Tree</h3>
+                        <p>King of fruits, national fruit of India</p>
+                        <div class="plant-details">
+                            <span class="difficulty">🟡 Moderate</span>
+                            <span class="light">☀️ Full Sun</span>
+                        </div>
+                        <p class="price">₹500</p>
+                        <button class="add-to-cart" data-name="Mango Tree" data-price="50.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="plant-card" data-price="42" data-category="statement">
+                    <img src="/coconut.jpeg" alt="Coconut Palm">
+                    <div class="plant-info">
+                        <h3>Coconut Palm</h3>
+                        <p>Tropical palm, versatile uses</p>
+                        <div class="plant-details">
+                            <span class="difficulty">🟡 Moderate</span>
+                            <span class="light">☀️ Full Sun</span>
+                        </div>
+                        <p class="price">₹999.00</p>
+                        <button class="add-to-cart" data-name="Coconut Palm" data-price="42.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="plant-card" data-price="48" data-category="statement">
+                    <img src="/guava.jpeg" alt="Guava Tree">
+                    <div class="plant-info">
+                        <h3>Guava Tree (Amrood)</h3>
+                        <p>Sweet tropical fruit, vitamin C rich</p>
+                        <div class="plant-details">
+                            <span class="difficulty">🟢 Easy</span>
+                            <span class="light">☀️ Full Sun</span>
+                        </div>
+                        <p class="price">₹48.00</p>
+                        <button class="add-to-cart" data-name="Guava Tree (Amrood)" data-price="48.00">Add to Cart</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
